@@ -11,7 +11,7 @@ var subcadena = nombre.substr(0,6)
 console.log(primeraLetra)
 console.log(subcadena)
 
-var estudiantes = ["Alva", "Obeso", "Cardenas", "Taday", "Silva"]
+var estudiantes = ["Alvo", "Obeso", "Cardenas", "Taday", "Silva"]
 
 //funcion declarativa
 function imprimirEstudiantes(persona) {

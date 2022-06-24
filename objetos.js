@@ -41,7 +41,7 @@ var cumpliranios_Val = function (edad) {
 cumpliranios_Val(investigador)
 
 // declarativa
-const Mayor_Edad = 18 
+const Mayor_Edad = 17
 function esMayorEdad(persona){
 	return persona.edad >= Mayor_Edad 
 }
