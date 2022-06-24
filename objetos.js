@@ -1,7 +1,7 @@
 //El uso de inicializadores de objeto
 
 var investigador = {
-	nombre :"Cristobal", 
+	nombre :"Cristobalexu", 
 	Apellido: "Mieles",
 	email : "cristobal234@gmail.com",
 	filicacion: "Universidad Politecnica Salesiana",
