@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Sumar dos números</h1>
+    <p>Por favor, introduce dos números:</p>
+    <h3>Poner numero 1</h3>
+    <input id="num1"><br>
+    <h3>Poner numero 3</h3>
+    <input id="num2"><br>
+    <h3>Poner la primera palabra</h3>
+    <input type="text" id="texto1">
+    <h3>Poner la segunda palabra</h3>
+    <input type="text" id="texto2"><br>
+    <h4>Seleccione la opción</h4>
+    <select id="opcion" name="opcion">
+
+        <option selected>Sumar</option>
+
+        <option>Multiplicar</option>
+
+        <option>Restar</option>
+
+        <option>Dividir</option>
+
+    </select>
+    <button type="button" onclick="myFunction()">Opcion</button>
+    <p id="sumando"></p>
+    <script>
+        function myFunction() {
+            var x, y, suma, text, multiplicar, dividir, restar;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            var combo = document.getElementById("opcion");
+            var selected = combo.options[combo.selectedIndex].text;
+
+            var texto1 = document.getElementById("texto1").value;
+            var texto2 = document.getElementById("texto2").value;
+
+            var resultado_texto = texto1.toUpperCase() + " " + texto2.toUpperCase();
+
+
+            if (selected == "Sumar") {
+                //si no ponemos parseFloat concatenaría x con y  
+                suma = parseFloat(x) + parseFloat(y);
+                text = suma;
+            }
+            if (selected == "Multiplicar") {
+                multiplicar = parseFloat(x) * parseFloat(y);
+                text = multiplicar;
+            }
+            if (selected == "Restar") {
+                restar = parseFloat(x) - parseFloat(y)
+                text = restar;
+
+            }
+            if (selected == "Dividir") {
+                dividir = parseFloat(x) / parseFloat(y);
+                text = dividir;
+
+            }
+            if (isNaN(x) || isNaN(y)) {
+                text = "Es necesarios introducir dos números válidos";
+            }
+            document.getElementById("sumando").innerHTML = text + " " + resultado_texto;
+        }  
+    </script>
+</body>
+
+</html>
